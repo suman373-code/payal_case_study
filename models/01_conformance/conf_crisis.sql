@@ -2,12 +2,12 @@
  
 with source as (
 select
-cast(year as integer) as crises_year,
-event as crisis_event
+cast(year as integer) as crisis_year,
+event as crisis_name
 from {{ ref('Crises') }}
 )
  
 select
-	crises_year,
-	crisis_event
+	crisis_year,
+	crisis_name
 from source

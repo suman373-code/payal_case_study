@@ -49,4 +49,7 @@ models:
         node_color: blue
 seeds:
   +schema: raw
+tests:
+  +docs:
+        node_color: red
 

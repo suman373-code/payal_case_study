@@ -19323,3 +19323,700 @@ KeyboardInterrupt
 [0m01:41:17.254373 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BAC9BAA250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BAD251EE10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BAD29F6A50>]}
 [0m01:41:17.255346 [debug] [MainThread]: Flushing usage events
 [0m01:41:17.876967 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:05:20.455521 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024EE92C6750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024EE92C4850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024EE92C50D0>]}
+
+
+============================== 03:05:20.460178 | 523ce9a4-246a-448f-9308-09700308c22e ==============================
+[0m03:05:20.460178 [info ] [MainThread]: Running with dbt=1.10.9
+[0m03:05:20.461356 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'version_check': 'True', 'invocation_command': 'dbt test', 'log_format': 'default', 'warn_error': 'None', 'introspect': 'True', 'debug': 'False', 'printer_width': '80', 'fail_fast': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'use_experimental_parser': 'False', 'log_cache_events': 'False', 'log_path': 'C:\\Users\\AD06076\\payal\\my_dbt_project\\payal_dbt\\logs', 'indirect_selection': 'eager', 'profiles_dir': 'C:\\Users\\AD06076\\.dbt', 'static_parser': 'True', 'write_json': 'True'}
+[0m03:05:21.177962 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '523ce9a4-246a-448f-9308-09700308c22e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024EEAEF0A50>]}
+[0m03:05:21.227125 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '523ce9a4-246a-448f-9308-09700308c22e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024EEAEB1750>]}
+[0m03:05:21.227125 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m03:05:21.893962 [debug] [MainThread]: checksum: 6543b8b248ceda473ef0d611849d5d909085b6b714afa9b515e9635faea7af23, vars: {}, profile: , target: , version: 1.10.9
+[0m03:05:22.343426 [debug] [MainThread]: Partial parsing enabled: 5 files deleted, 1 files added, 0 files changed.
+[0m03:05:22.343426 [debug] [MainThread]: Partial parsing: added file: payal_dbt://models\03_business\bus_models.yml
+[0m03:05:22.343426 [debug] [MainThread]: Partial parsing: deleted file: payal_dbt://models\03_business\bus_customer_vs_crisis.md
+[0m03:05:22.343426 [debug] [MainThread]: Partial parsing: deleted file: payal_dbt://models\03_business\bus_macro_insights.md
+[0m03:05:22.343426 [debug] [MainThread]: Partial parsing: deleted file: payal_dbt://models\03_business\bus_customer_macro_alignment.md
+[0m03:05:22.343426 [debug] [MainThread]: Partial parsing: deleted file: payal_dbt://models\02_integration\int_macro_context.md
+[0m03:05:22.343426 [debug] [MainThread]: Partial parsing: deleted file: payal_dbt://models\02_integration\int_customer_trends.md
+[0m03:05:22.413811 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Invalid models config given in models\03_business\bus_models.yml @ models: {'name': 'bus_inflation_over_crisis', 'description': 'This model shows the resilience of norway economy during crisis.\n', 'columns': [{'name': 'crisis_name', 'description': 'Name of the Crisis.', 'tests': {'-accepted_values': {'values': ['Oil crisis', 'Asian crisis', 'Dot com', 'Financial crisis', 'Covid 19']}}}], 'original_file_path': 'models\\03_business\\bus_models.yml', 'yaml_key': 'models', 'package_name': 'payal_dbt'} - at path ['columns'][0]['tests']: {'-accepted_values': {'values': ['Oil crisis', 'Asian crisis', 'Dot com', 'Financial crisis', 'Covid 19']}} is not of type 'array'
+[0m03:05:22.413811 [debug] [MainThread]: Command `dbt test` failed at 03:05:22.413811 after 2.12 seconds
+[0m03:05:22.413811 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024EE934FBD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024EE934FF10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024EEB08B990>]}
+[0m03:05:22.413811 [debug] [MainThread]: Flushing usage events
+[0m03:05:23.092704 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:07:48.036616 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028E3CB51950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028E3CAE6010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028E3CAE4A10>]}
+
+
+============================== 03:07:48.036616 | b373c5a5-16f2-4eef-aab7-e80ce2a629fb ==============================
+[0m03:07:48.036616 [info ] [MainThread]: Running with dbt=1.10.9
+[0m03:07:48.036616 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'target_path': 'None', 'version_check': 'True', 'invocation_command': 'dbt test', 'log_format': 'default', 'use_colors': 'True', 'introspect': 'True', 'debug': 'False', 'printer_width': '80', 'fail_fast': 'False', 'no_print': 'None', 'empty': 'None', 'quiet': 'False', 'use_experimental_parser': 'False', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\AD06076\\payal\\my_dbt_project\\payal_dbt\\logs', 'profiles_dir': 'C:\\Users\\AD06076\\.dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True'}
+[0m03:07:48.633705 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b373c5a5-16f2-4eef-aab7-e80ce2a629fb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028E3E797790>]}
+[0m03:07:48.681297 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b373c5a5-16f2-4eef-aab7-e80ce2a629fb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028E3BB25A90>]}
+[0m03:07:48.681297 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m03:07:49.035160 [debug] [MainThread]: checksum: 6543b8b248ceda473ef0d611849d5d909085b6b714afa9b515e9635faea7af23, vars: {}, profile: , target: , version: 1.10.9
+[0m03:07:49.252892 [debug] [MainThread]: Partial parsing enabled: 5 files deleted, 1 files added, 0 files changed.
+[0m03:07:49.252892 [debug] [MainThread]: Partial parsing: added file: payal_dbt://models\03_business\bus_models.yml
+[0m03:07:49.252892 [debug] [MainThread]: Partial parsing: deleted file: payal_dbt://models\02_integration\int_customer_trends.md
+[0m03:07:49.252892 [debug] [MainThread]: Partial parsing: deleted file: payal_dbt://models\02_integration\int_macro_context.md
+[0m03:07:49.252892 [debug] [MainThread]: Partial parsing: deleted file: payal_dbt://models\03_business\bus_macro_insights.md
+[0m03:07:49.252892 [debug] [MainThread]: Partial parsing: deleted file: payal_dbt://models\03_business\bus_customer_vs_crisis.md
+[0m03:07:49.252892 [debug] [MainThread]: Partial parsing: deleted file: payal_dbt://models\03_business\bus_customer_macro_alignment.md
+[0m03:07:49.448385 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b373c5a5-16f2-4eef-aab7-e80ce2a629fb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028E3ED4DE10>]}
+[0m03:07:49.526453 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\AD06076\payal\my_dbt_project\payal_dbt\target\manifest.json
+[0m03:07:49.542481 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\AD06076\payal\my_dbt_project\payal_dbt\target\semantic_manifest.json
+[0m03:07:49.619224 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b373c5a5-16f2-4eef-aab7-e80ce2a629fb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028E3EEF39D0>]}
+[0m03:07:49.620578 [info ] [MainThread]: Found 17 models, 3 data tests, 8 seeds, 679 macros
+[0m03:07:49.620578 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b373c5a5-16f2-4eef-aab7-e80ce2a629fb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028E3E89E410>]}
+[0m03:07:49.622565 [info ] [MainThread]: 
+[0m03:07:49.623570 [info ] [MainThread]: Concurrency: 8 threads (target='dev')
+[0m03:07:49.624586 [info ] [MainThread]: 
+[0m03:07:49.625600 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m03:07:49.630586 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_PC_DBT_DB_business'
+[0m03:07:49.637843 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_PC_DBT_DB_raw'
+[0m03:07:49.640544 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_PC_DBT_DB_conformance'
+[0m03:07:49.640544 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_PC_DBT_DB_integration'
+[0m03:07:54.212451 [debug] [ThreadPool]: Using snowflake connection "list_PC_DBT_DB_business"
+[0m03:07:54.212451 [debug] [ThreadPool]: Using snowflake connection "list_PC_DBT_DB_raw"
+[0m03:07:54.212451 [debug] [ThreadPool]: Using snowflake connection "list_PC_DBT_DB_conformance"
+[0m03:07:54.212451 [debug] [ThreadPool]: Using snowflake connection "list_PC_DBT_DB_integration"
+[0m03:07:54.212451 [debug] [ThreadPool]: On list_PC_DBT_DB_business: show objects in PC_DBT_DB.business
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "payal_dbt", "target_name": "dev", "connection_name": "list_PC_DBT_DB_business"} */;
+[0m03:07:54.212451 [debug] [ThreadPool]: On list_PC_DBT_DB_raw: show objects in PC_DBT_DB.raw
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "payal_dbt", "target_name": "dev", "connection_name": "list_PC_DBT_DB_raw"} */;
+[0m03:07:54.212451 [debug] [ThreadPool]: On list_PC_DBT_DB_conformance: show objects in PC_DBT_DB.conformance
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "payal_dbt", "target_name": "dev", "connection_name": "list_PC_DBT_DB_conformance"} */;
+[0m03:07:54.212451 [debug] [ThreadPool]: On list_PC_DBT_DB_integration: show objects in PC_DBT_DB.integration
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "payal_dbt", "target_name": "dev", "connection_name": "list_PC_DBT_DB_integration"} */;
+[0m03:07:54.226553 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:07:54.226553 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:07:54.226553 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:07:54.226553 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:07:59.042376 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 4.815 seconds
+[0m03:07:59.055430 [debug] [ThreadPool]: SQL status: SUCCESS 8 in 4.829 seconds
+[0m03:07:59.059303 [debug] [ThreadPool]: SQL status: SUCCESS 8 in 4.847 seconds
+[0m03:07:59.113099 [debug] [ThreadPool]: SQL status: SUCCESS 9 in 4.888 seconds
+[0m03:07:59.116606 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b373c5a5-16f2-4eef-aab7-e80ce2a629fb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028E3E6DDAD0>]}
+[0m03:07:59.122414 [debug] [Thread-1 (]: Began running node test.payal_dbt.count_validation_raw_conf_kpi
+[0m03:07:59.122414 [debug] [Thread-2 (]: Began running node test.payal_dbt.not_null_bus_customer_aum_over_time_customer_name.ddcca3c07e
+[0m03:07:59.122414 [debug] [Thread-3 (]: Began running node test.payal_dbt.unique_bus_customer_aum_over_time_customer_name.284f6bd37a
+[0m03:07:59.122414 [info ] [Thread-1 (]: 1 of 3 START test count_validation_raw_conf_kpi ................................ [RUN]
+[0m03:07:59.122414 [info ] [Thread-2 (]: 2 of 3 START test not_null_bus_customer_aum_over_time_customer_name ............ [RUN]
+[0m03:07:59.131837 [debug] [Thread-1 (]: Acquiring new snowflake connection 'test.payal_dbt.count_validation_raw_conf_kpi'
+[0m03:07:59.122414 [info ] [Thread-3 (]: 3 of 3 START test unique_bus_customer_aum_over_time_customer_name .............. [RUN]
+[0m03:07:59.131837 [debug] [Thread-2 (]: Acquiring new snowflake connection 'test.payal_dbt.not_null_bus_customer_aum_over_time_customer_name.ddcca3c07e'
+[0m03:07:59.131837 [debug] [Thread-1 (]: Began compiling node test.payal_dbt.count_validation_raw_conf_kpi
+[0m03:07:59.131837 [debug] [Thread-3 (]: Acquiring new snowflake connection 'test.payal_dbt.unique_bus_customer_aum_over_time_customer_name.284f6bd37a'
+[0m03:07:59.131837 [debug] [Thread-2 (]: Began compiling node test.payal_dbt.not_null_bus_customer_aum_over_time_customer_name.ddcca3c07e
+[0m03:07:59.139917 [debug] [Thread-1 (]: Writing injected SQL for node "test.payal_dbt.count_validation_raw_conf_kpi"
+[0m03:07:59.141074 [debug] [Thread-3 (]: Began compiling node test.payal_dbt.unique_bus_customer_aum_over_time_customer_name.284f6bd37a
+[0m03:07:59.151147 [debug] [Thread-2 (]: Writing injected SQL for node "test.payal_dbt.not_null_bus_customer_aum_over_time_customer_name.ddcca3c07e"
+[0m03:07:59.157775 [debug] [Thread-3 (]: Writing injected SQL for node "test.payal_dbt.unique_bus_customer_aum_over_time_customer_name.284f6bd37a"
+[0m03:07:59.158776 [debug] [Thread-1 (]: Began executing node test.payal_dbt.count_validation_raw_conf_kpi
+[0m03:07:59.176739 [debug] [Thread-1 (]: Writing runtime sql for node "test.payal_dbt.count_validation_raw_conf_kpi"
+[0m03:07:59.179649 [debug] [Thread-1 (]: Using snowflake connection "test.payal_dbt.count_validation_raw_conf_kpi"
+[0m03:07:59.179649 [debug] [Thread-1 (]: On test.payal_dbt.count_validation_raw_conf_kpi: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  with raw_count as (
+select count(*) as c1 
+from PC_DBT_DB.raw.Cpi
+),
+conf_count as (
+select count(*) as c2
+from PC_DBT_DB.conformance.conf_cpi
+)
+select 
+    raw_count.c1,
+    conf_count.c2
+from raw_count, conf_count
+where raw_count.c1 != conf_count.c2
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "payal_dbt", "target_name": "dev", "node_id": "test.payal_dbt.count_validation_raw_conf_kpi"} */
+[0m03:07:59.181195 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m03:07:59.182782 [debug] [Thread-2 (]: Began executing node test.payal_dbt.not_null_bus_customer_aum_over_time_customer_name.ddcca3c07e
+[0m03:07:59.182782 [debug] [Thread-3 (]: Began executing node test.payal_dbt.unique_bus_customer_aum_over_time_customer_name.284f6bd37a
+[0m03:07:59.182782 [debug] [Thread-2 (]: Writing runtime sql for node "test.payal_dbt.not_null_bus_customer_aum_over_time_customer_name.ddcca3c07e"
+[0m03:07:59.189780 [debug] [Thread-3 (]: Writing runtime sql for node "test.payal_dbt.unique_bus_customer_aum_over_time_customer_name.284f6bd37a"
+[0m03:07:59.192672 [debug] [Thread-2 (]: Using snowflake connection "test.payal_dbt.not_null_bus_customer_aum_over_time_customer_name.ddcca3c07e"
+[0m03:07:59.193669 [debug] [Thread-2 (]: On test.payal_dbt.not_null_bus_customer_aum_over_time_customer_name.ddcca3c07e: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_name
+from PC_DBT_DB.business.bus_customer_aum_over_time
+where customer_name is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "payal_dbt", "target_name": "dev", "node_id": "test.payal_dbt.not_null_bus_customer_aum_over_time_customer_name.ddcca3c07e"} */
+[0m03:07:59.194799 [debug] [Thread-3 (]: Using snowflake connection "test.payal_dbt.unique_bus_customer_aum_over_time_customer_name.284f6bd37a"
+[0m03:07:59.194799 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m03:07:59.195775 [debug] [Thread-3 (]: On test.payal_dbt.unique_bus_customer_aum_over_time_customer_name.284f6bd37a: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    customer_name as unique_field,
+    count(*) as n_records
+
+from PC_DBT_DB.business.bus_customer_aum_over_time
+where customer_name is not null
+group by customer_name
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "payal_dbt", "target_name": "dev", "node_id": "test.payal_dbt.unique_bus_customer_aum_over_time_customer_name.284f6bd37a"} */
+[0m03:07:59.198669 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m03:08:01.838817 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 2.648 seconds
+[0m03:08:01.838817 [error] [Thread-3 (]: 3 of 3 FAIL 2 unique_bus_customer_aum_over_time_customer_name .................. [[31mFAIL 2[0m in 2.71s]
+[0m03:08:01.854773 [debug] [Thread-3 (]: Finished running node test.payal_dbt.unique_bus_customer_aum_over_time_customer_name.284f6bd37a
+[0m03:08:01.905561 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 2.725 seconds
+[0m03:08:01.907589 [info ] [Thread-1 (]: 1 of 3 PASS count_validation_raw_conf_kpi ...................................... [[32mPASS[0m in 2.79s]
+[0m03:08:01.908596 [debug] [Thread-1 (]: Finished running node test.payal_dbt.count_validation_raw_conf_kpi
+[0m03:08:02.004595 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 2.809 seconds
+[0m03:08:02.004595 [info ] [Thread-2 (]: 2 of 3 PASS not_null_bus_customer_aum_over_time_customer_name .................. [[32mPASS[0m in 2.87s]
+[0m03:08:02.004595 [debug] [Thread-2 (]: Finished running node test.payal_dbt.not_null_bus_customer_aum_over_time_customer_name.ddcca3c07e
+[0m03:08:02.004595 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m03:08:02.015507 [debug] [MainThread]: Connection 'list_PC_DBT_DB_business' was left open.
+[0m03:08:02.015507 [debug] [MainThread]: On list_PC_DBT_DB_business: Close
+[0m03:08:02.087763 [debug] [MainThread]: Connection 'list_PC_DBT_DB_raw' was left open.
+[0m03:08:02.087763 [debug] [MainThread]: On list_PC_DBT_DB_raw: Close
+[0m03:08:02.176036 [debug] [MainThread]: Connection 'list_PC_DBT_DB_conformance' was left open.
+[0m03:08:02.176036 [debug] [MainThread]: On list_PC_DBT_DB_conformance: Close
+[0m03:08:02.247241 [debug] [MainThread]: Connection 'list_PC_DBT_DB_integration' was left open.
+[0m03:08:02.247241 [debug] [MainThread]: On list_PC_DBT_DB_integration: Close
+[0m03:08:02.327460 [debug] [MainThread]: Connection 'test.payal_dbt.count_validation_raw_conf_kpi' was left open.
+[0m03:08:02.327460 [debug] [MainThread]: On test.payal_dbt.count_validation_raw_conf_kpi: Close
+[0m03:08:02.406832 [debug] [MainThread]: Connection 'test.payal_dbt.not_null_bus_customer_aum_over_time_customer_name.ddcca3c07e' was left open.
+[0m03:08:02.406832 [debug] [MainThread]: On test.payal_dbt.not_null_bus_customer_aum_over_time_customer_name.ddcca3c07e: Close
+[0m03:08:02.503891 [debug] [MainThread]: Connection 'test.payal_dbt.unique_bus_customer_aum_over_time_customer_name.284f6bd37a' was left open.
+[0m03:08:02.503891 [debug] [MainThread]: On test.payal_dbt.unique_bus_customer_aum_over_time_customer_name.284f6bd37a: Close
+[0m03:08:02.577224 [info ] [MainThread]: 
+[0m03:08:02.585542 [info ] [MainThread]: Finished running 3 data tests in 0 hours 0 minutes and 12.95 seconds (12.95s).
+[0m03:08:02.585542 [debug] [MainThread]: Command end result
+[0m03:08:02.614037 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\AD06076\payal\my_dbt_project\payal_dbt\target\manifest.json
+[0m03:08:02.614037 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\AD06076\payal\my_dbt_project\payal_dbt\target\semantic_manifest.json
+[0m03:08:02.621911 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\AD06076\payal\my_dbt_project\payal_dbt\target\run_results.json
+[0m03:08:02.621911 [info ] [MainThread]: 
+[0m03:08:02.621911 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m03:08:02.621911 [info ] [MainThread]: 
+[0m03:08:02.621911 [error] [MainThread]: [31mFailure in test unique_bus_customer_aum_over_time_customer_name (models\03_business\bus_models.yml)[0m
+[0m03:08:02.621911 [error] [MainThread]:   Got 2 results, configured to fail if != 0
+[0m03:08:02.621911 [info ] [MainThread]: 
+[0m03:08:02.621911 [info ] [MainThread]:   compiled code at target\compiled\payal_dbt\models\03_business\bus_models.yml\unique_bus_customer_aum_over_time_customer_name.sql
+[0m03:08:02.621911 [info ] [MainThread]: 
+[0m03:08:02.621911 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=3
+[0m03:08:02.633664 [debug] [MainThread]: Command `dbt test` failed at 03:08:02.633664 after 14.67 seconds
+[0m03:08:02.633664 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028E35E4A3D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028E35E4A7D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028E35E4A450>]}
+[0m03:08:02.634710 [debug] [MainThread]: Flushing usage events
+[0m03:08:03.374089 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:08:13.410628 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023CCE425150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023CCE41D6D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023CCE41F210>]}
+
+
+============================== 03:08:13.413658 | 2857f2b8-2175-4ceb-859f-41e4d2c938aa ==============================
+[0m03:08:13.413658 [info ] [MainThread]: Running with dbt=1.10.9
+[0m03:08:13.413658 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'warn_error': 'None', 'invocation_command': 'dbt test', 'log_format': 'default', 'use_colors': 'True', 'introspect': 'True', 'debug': 'False', 'printer_width': '80', 'fail_fast': 'False', 'no_print': 'None', 'empty': 'None', 'use_experimental_parser': 'False', 'quiet': 'False', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\AD06076\\payal\\my_dbt_project\\payal_dbt\\logs', 'profiles_dir': 'C:\\Users\\AD06076\\.dbt', 'static_parser': 'True', 'write_json': 'True'}
+[0m03:08:13.963290 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2857f2b8-2175-4ceb-859f-41e4d2c938aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023CD0070610>]}
+[0m03:08:14.010961 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2857f2b8-2175-4ceb-859f-41e4d2c938aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023CD0011510>]}
+[0m03:08:14.010961 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m03:08:14.336228 [debug] [MainThread]: checksum: 6543b8b248ceda473ef0d611849d5d909085b6b714afa9b515e9635faea7af23, vars: {}, profile: , target: , version: 1.10.9
+[0m03:08:14.575145 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m03:08:14.575145 [debug] [MainThread]: Partial parsing: updated file: payal_dbt://models\03_business\bus_models.yml
+[0m03:08:14.901862 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2857f2b8-2175-4ceb-859f-41e4d2c938aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023CD06FDE10>]}
+[0m03:08:14.981751 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\AD06076\payal\my_dbt_project\payal_dbt\target\manifest.json
+[0m03:08:14.991028 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\AD06076\payal\my_dbt_project\payal_dbt\target\semantic_manifest.json
+[0m03:08:15.029559 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '2857f2b8-2175-4ceb-859f-41e4d2c938aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023CD0B6DB90>]}
+[0m03:08:15.029559 [info ] [MainThread]: Found 17 models, 2 data tests, 8 seeds, 679 macros
+[0m03:08:15.029559 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2857f2b8-2175-4ceb-859f-41e4d2c938aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023CD0A06B50>]}
+[0m03:08:15.029559 [info ] [MainThread]: 
+[0m03:08:15.029559 [info ] [MainThread]: Concurrency: 8 threads (target='dev')
+[0m03:08:15.029559 [info ] [MainThread]: 
+[0m03:08:15.029559 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m03:08:15.029559 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_PC_DBT_DB_integration'
+[0m03:08:15.051541 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_PC_DBT_DB_conformance'
+[0m03:08:15.061004 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_PC_DBT_DB_raw'
+[0m03:08:15.061866 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_PC_DBT_DB_business'
+[0m03:08:15.203190 [debug] [ThreadPool]: Using snowflake connection "list_PC_DBT_DB_integration"
+[0m03:08:15.203190 [debug] [ThreadPool]: Using snowflake connection "list_PC_DBT_DB_conformance"
+[0m03:08:15.203190 [debug] [ThreadPool]: Using snowflake connection "list_PC_DBT_DB_raw"
+[0m03:08:15.203190 [debug] [ThreadPool]: Using snowflake connection "list_PC_DBT_DB_business"
+[0m03:08:15.203190 [debug] [ThreadPool]: On list_PC_DBT_DB_integration: show objects in PC_DBT_DB.integration
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "payal_dbt", "target_name": "dev", "connection_name": "list_PC_DBT_DB_integration"} */;
+[0m03:08:15.203190 [debug] [ThreadPool]: On list_PC_DBT_DB_conformance: show objects in PC_DBT_DB.conformance
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "payal_dbt", "target_name": "dev", "connection_name": "list_PC_DBT_DB_conformance"} */;
+[0m03:08:15.203190 [debug] [ThreadPool]: On list_PC_DBT_DB_raw: show objects in PC_DBT_DB.raw
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "payal_dbt", "target_name": "dev", "connection_name": "list_PC_DBT_DB_raw"} */;
+[0m03:08:15.203190 [debug] [ThreadPool]: On list_PC_DBT_DB_business: show objects in PC_DBT_DB.business
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "payal_dbt", "target_name": "dev", "connection_name": "list_PC_DBT_DB_business"} */;
+[0m03:08:15.203190 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:08:15.203190 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:08:15.203190 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:08:15.203190 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:08:18.246084 [debug] [ThreadPool]: SQL status: SUCCESS 9 in 3.048 seconds
+[0m03:08:18.262104 [debug] [ThreadPool]: SQL status: SUCCESS 8 in 3.061 seconds
+[0m03:08:18.294584 [debug] [ThreadPool]: SQL status: SUCCESS 8 in 3.086 seconds
+[0m03:08:18.294584 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 3.094 seconds
+[0m03:08:18.294584 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2857f2b8-2175-4ceb-859f-41e4d2c938aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023CCAE50810>]}
+[0m03:08:18.310769 [debug] [Thread-1 (]: Began running node test.payal_dbt.count_validation_raw_conf_kpi
+[0m03:08:18.310769 [debug] [Thread-2 (]: Began running node test.payal_dbt.not_null_bus_customer_aum_over_time_customer_name.ddcca3c07e
+[0m03:08:18.310769 [info ] [Thread-1 (]: 1 of 2 START test count_validation_raw_conf_kpi ................................ [RUN]
+[0m03:08:18.310769 [debug] [Thread-1 (]: Acquiring new snowflake connection 'test.payal_dbt.count_validation_raw_conf_kpi'
+[0m03:08:18.310769 [info ] [Thread-2 (]: 2 of 2 START test not_null_bus_customer_aum_over_time_customer_name ............ [RUN]
+[0m03:08:18.310769 [debug] [Thread-1 (]: Began compiling node test.payal_dbt.count_validation_raw_conf_kpi
+[0m03:08:18.310769 [debug] [Thread-2 (]: Acquiring new snowflake connection 'test.payal_dbt.not_null_bus_customer_aum_over_time_customer_name.ddcca3c07e'
+[0m03:08:18.326753 [debug] [Thread-1 (]: Writing injected SQL for node "test.payal_dbt.count_validation_raw_conf_kpi"
+[0m03:08:18.328175 [debug] [Thread-2 (]: Began compiling node test.payal_dbt.not_null_bus_customer_aum_over_time_customer_name.ddcca3c07e
+[0m03:08:18.338798 [debug] [Thread-2 (]: Writing injected SQL for node "test.payal_dbt.not_null_bus_customer_aum_over_time_customer_name.ddcca3c07e"
+[0m03:08:18.338798 [debug] [Thread-1 (]: Began executing node test.payal_dbt.count_validation_raw_conf_kpi
+[0m03:08:18.357395 [debug] [Thread-1 (]: Writing runtime sql for node "test.payal_dbt.count_validation_raw_conf_kpi"
+[0m03:08:18.358931 [debug] [Thread-2 (]: Began executing node test.payal_dbt.not_null_bus_customer_aum_over_time_customer_name.ddcca3c07e
+[0m03:08:18.358931 [debug] [Thread-2 (]: Writing runtime sql for node "test.payal_dbt.not_null_bus_customer_aum_over_time_customer_name.ddcca3c07e"
+[0m03:08:18.358931 [debug] [Thread-1 (]: Using snowflake connection "test.payal_dbt.count_validation_raw_conf_kpi"
+[0m03:08:18.358931 [debug] [Thread-1 (]: On test.payal_dbt.count_validation_raw_conf_kpi: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  with raw_count as (
+select count(*) as c1 
+from PC_DBT_DB.raw.Cpi
+),
+conf_count as (
+select count(*) as c2
+from PC_DBT_DB.conformance.conf_cpi
+)
+select 
+    raw_count.c1,
+    conf_count.c2
+from raw_count, conf_count
+where raw_count.c1 != conf_count.c2
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "payal_dbt", "target_name": "dev", "node_id": "test.payal_dbt.count_validation_raw_conf_kpi"} */
+[0m03:08:18.358931 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m03:08:18.358931 [debug] [Thread-2 (]: Using snowflake connection "test.payal_dbt.not_null_bus_customer_aum_over_time_customer_name.ddcca3c07e"
+[0m03:08:18.358931 [debug] [Thread-2 (]: On test.payal_dbt.not_null_bus_customer_aum_over_time_customer_name.ddcca3c07e: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_name
+from PC_DBT_DB.business.bus_customer_aum_over_time
+where customer_name is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "payal_dbt", "target_name": "dev", "node_id": "test.payal_dbt.not_null_bus_customer_aum_over_time_customer_name.ddcca3c07e"} */
+[0m03:08:18.358931 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m03:08:20.707401 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 2.339 seconds
+[0m03:08:20.709420 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 2.345 seconds
+[0m03:08:20.709420 [info ] [Thread-2 (]: 2 of 2 PASS not_null_bus_customer_aum_over_time_customer_name .................. [[32mPASS[0m in 2.40s]
+[0m03:08:20.709420 [debug] [Thread-2 (]: Finished running node test.payal_dbt.not_null_bus_customer_aum_over_time_customer_name.ddcca3c07e
+[0m03:08:20.709420 [info ] [Thread-1 (]: 1 of 2 PASS count_validation_raw_conf_kpi ...................................... [[32mPASS[0m in 2.40s]
+[0m03:08:20.719857 [debug] [Thread-1 (]: Finished running node test.payal_dbt.count_validation_raw_conf_kpi
+[0m03:08:20.719857 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m03:08:20.719857 [debug] [MainThread]: Connection 'list_PC_DBT_DB_integration' was left open.
+[0m03:08:20.719857 [debug] [MainThread]: On list_PC_DBT_DB_integration: Close
+[0m03:08:20.791861 [debug] [MainThread]: Connection 'list_PC_DBT_DB_conformance' was left open.
+[0m03:08:20.791861 [debug] [MainThread]: On list_PC_DBT_DB_conformance: Close
+[0m03:08:20.857435 [debug] [MainThread]: Connection 'list_PC_DBT_DB_raw' was left open.
+[0m03:08:20.873251 [debug] [MainThread]: On list_PC_DBT_DB_raw: Close
+[0m03:08:20.954164 [debug] [MainThread]: Connection 'list_PC_DBT_DB_business' was left open.
+[0m03:08:20.954815 [debug] [MainThread]: On list_PC_DBT_DB_business: Close
+[0m03:08:21.016382 [debug] [MainThread]: Connection 'test.payal_dbt.count_validation_raw_conf_kpi' was left open.
+[0m03:08:21.016382 [debug] [MainThread]: On test.payal_dbt.count_validation_raw_conf_kpi: Close
+[0m03:08:21.101836 [debug] [MainThread]: Connection 'test.payal_dbt.not_null_bus_customer_aum_over_time_customer_name.ddcca3c07e' was left open.
+[0m03:08:21.101836 [debug] [MainThread]: On test.payal_dbt.not_null_bus_customer_aum_over_time_customer_name.ddcca3c07e: Close
+[0m03:08:21.174226 [info ] [MainThread]: 
+[0m03:08:21.174771 [info ] [MainThread]: Finished running 2 data tests in 0 hours 0 minutes and 6.14 seconds (6.14s).
+[0m03:08:21.174771 [debug] [MainThread]: Command end result
+[0m03:08:21.202917 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\AD06076\payal\my_dbt_project\payal_dbt\target\manifest.json
+[0m03:08:21.207963 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\AD06076\payal\my_dbt_project\payal_dbt\target\semantic_manifest.json
+[0m03:08:21.213703 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\AD06076\payal\my_dbt_project\payal_dbt\target\run_results.json
+[0m03:08:21.222978 [info ] [MainThread]: 
+[0m03:08:21.224566 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m03:08:21.226372 [info ] [MainThread]: 
+[0m03:08:21.226372 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=2
+[0m03:08:21.226372 [debug] [MainThread]: Command `dbt test` succeeded at 03:08:21.226372 after 7.90 seconds
+[0m03:08:21.226372 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023CCE4AFE90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023CCE4AFF50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023CCE4AD3D0>]}
+[0m03:08:21.226372 [debug] [MainThread]: Flushing usage events
+[0m03:08:21.855197 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:09:13.010956 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BCD7316690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BCD737C0D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BCD737CB50>]}
+
+
+============================== 03:09:13.010956 | e8b7fab6-4aec-488a-8409-4f8f576e3b10 ==============================
+[0m03:09:13.010956 [info ] [MainThread]: Running with dbt=1.10.9
+[0m03:09:13.010956 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'profiles_dir': 'C:\\Users\\AD06076\\.dbt', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'target_path': 'None', 'use_colors': 'True', 'invocation_command': 'dbt test', 'log_format': 'default', 'version_check': 'True', 'introspect': 'True', 'debug': 'False', 'printer_width': '80', 'fail_fast': 'False', 'no_print': 'None', 'use_experimental_parser': 'False', 'empty': 'None', 'log_cache_events': 'False', 'quiet': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\AD06076\\payal\\my_dbt_project\\payal_dbt\\logs', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True'}
+[0m03:09:13.596555 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e8b7fab6-4aec-488a-8409-4f8f576e3b10', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BCD8FD9F10>]}
+[0m03:09:13.641357 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e8b7fab6-4aec-488a-8409-4f8f576e3b10', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BCD8F05CD0>]}
+[0m03:09:13.641357 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m03:09:13.972380 [debug] [MainThread]: checksum: 6543b8b248ceda473ef0d611849d5d909085b6b714afa9b515e9635faea7af23, vars: {}, profile: , target: , version: 1.10.9
+[0m03:09:14.199362 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m03:09:14.199362 [debug] [MainThread]: Partial parsing: updated file: payal_dbt://models\03_business\bus_models.yml
+[0m03:09:14.389623 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Invalid models config given in models\03_business\bus_models.yml @ models: {'name': 'bus_inflation_over_crisis', 'description': 'This model shows the resilience of norway economy during crisis.\n', 'columns': [{'name': 'crisis_name', 'description': 'Name of the Crisis.', 'tests': {'-accepted_values': {'values': 'Oil crisis Asian crisis Dot com Financial crisis Covid 19'}}}], 'original_file_path': 'models\\03_business\\bus_models.yml', 'yaml_key': 'models', 'package_name': 'payal_dbt'} - at path ['columns'][0]['tests']: {'-accepted_values': {'values': 'Oil crisis Asian crisis Dot com Financial crisis Covid 19'}} is not of type 'array'
+[0m03:09:14.389623 [debug] [MainThread]: Command `dbt test` failed at 03:09:14.389623 after 1.47 seconds
+[0m03:09:14.389623 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BCD7354210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BCD739FF90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BCD739FD90>]}
+[0m03:09:14.389623 [debug] [MainThread]: Flushing usage events
+[0m03:09:16.050168 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:10:47.367859 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023009524610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000230095261D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023009524F90>]}
+
+
+============================== 03:10:47.383738 | a2554417-138a-4394-9ad0-b096c19e27b1 ==============================
+[0m03:10:47.383738 [info ] [MainThread]: Running with dbt=1.10.9
+[0m03:10:47.383738 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'profiles_dir': 'C:\\Users\\AD06076\\.dbt', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'target_path': 'None', 'use_colors': 'True', 'invocation_command': 'dbt test', 'log_format': 'default', 'version_check': 'True', 'introspect': 'True', 'debug': 'False', 'printer_width': '80', 'fail_fast': 'False', 'no_print': 'None', 'empty': 'None', 'log_cache_events': 'False', 'use_experimental_parser': 'False', 'quiet': 'False', 'log_path': 'C:\\Users\\AD06076\\payal\\my_dbt_project\\payal_dbt\\logs', 'indirect_selection': 'eager', 'write_json': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m03:10:47.997837 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a2554417-138a-4394-9ad0-b096c19e27b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023009564390>]}
+[0m03:10:48.045823 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a2554417-138a-4394-9ad0-b096c19e27b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002300B111650>]}
+[0m03:10:48.045823 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m03:10:48.374358 [debug] [MainThread]: checksum: 6543b8b248ceda473ef0d611849d5d909085b6b714afa9b515e9635faea7af23, vars: {}, profile: , target: , version: 1.10.9
+[0m03:10:48.632611 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m03:10:48.632611 [debug] [MainThread]: Partial parsing: updated file: payal_dbt://models\03_business\bus_models.yml
+[0m03:10:48.834684 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Invalid models config given in models\03_business\bus_models.yml @ models: {'name': 'bus_inflation_over_crisis', 'description': 'This model shows the resilience of norway economy during crisis.\n', 'columns': [{'name': 'crisis_name', 'description': 'Name of the Crisis.', 'tests': {'-accepted_values': {'values': '-Oil crisis -Asian crisis -Dot com -Financial crisis -Covid 19'}}}], 'original_file_path': 'models\\03_business\\bus_models.yml', 'yaml_key': 'models', 'package_name': 'payal_dbt'} - at path ['columns'][0]['tests']: {'-accepted_values': {'values': '-Oil crisis -Asian crisis -Dot com -Financial crisis -Covid 19'}} is not of type 'array'
+[0m03:10:48.835698 [debug] [MainThread]: Command `dbt test` failed at 03:10:48.835698 after 1.53 seconds
+[0m03:10:48.836816 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023009524490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023009592950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002300B88D990>]}
+[0m03:10:48.837815 [debug] [MainThread]: Flushing usage events
+[0m03:10:49.471960 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:11:55.056374 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE7B375D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE774AA6D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE7A4EF890>]}
+
+
+============================== 03:11:55.072258 | d57ef4a1-4fe2-418a-a84e-36a0f7d6e889 ==============================
+[0m03:11:55.072258 [info ] [MainThread]: Running with dbt=1.10.9
+[0m03:11:55.072258 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'use_colors': 'True', 'invocation_command': 'dbt test', 'log_format': 'default', 'warn_error': 'None', 'introspect': 'True', 'debug': 'False', 'printer_width': '80', 'fail_fast': 'False', 'no_print': 'None', 'use_experimental_parser': 'False', 'quiet': 'False', 'log_cache_events': 'False', 'empty': 'None', 'log_path': 'C:\\Users\\AD06076\\payal\\my_dbt_project\\payal_dbt\\logs', 'indirect_selection': 'eager', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'profiles_dir': 'C:\\Users\\AD06076\\.dbt'}
+[0m03:11:55.621417 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd57ef4a1-4fe2-418a-a84e-36a0f7d6e889', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE7B3D7FD0>]}
+[0m03:11:55.669324 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd57ef4a1-4fe2-418a-a84e-36a0f7d6e889', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE7CF61690>]}
+[0m03:11:55.685451 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m03:11:56.010572 [debug] [MainThread]: checksum: 6543b8b248ceda473ef0d611849d5d909085b6b714afa9b515e9635faea7af23, vars: {}, profile: , target: , version: 1.10.9
+[0m03:11:56.218242 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m03:11:56.218242 [debug] [MainThread]: Partial parsing: updated file: payal_dbt://models\03_business\bus_models.yml
+[0m03:11:56.410818 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `accepted_values`. Arguments to generic tests
+should be nested under the `arguments` property.`
+[0m03:11:56.410818 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'd57ef4a1-4fe2-418a-a84e-36a0f7d6e889', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE7CF6CF50>]}
+[0m03:11:56.544767 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd57ef4a1-4fe2-418a-a84e-36a0f7d6e889', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE7D68D850>]}
+[0m03:11:56.624542 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\AD06076\payal\my_dbt_project\payal_dbt\target\manifest.json
+[0m03:11:56.624542 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\AD06076\payal\my_dbt_project\payal_dbt\target\semantic_manifest.json
+[0m03:11:56.656090 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd57ef4a1-4fe2-418a-a84e-36a0f7d6e889', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE7DADDC10>]}
+[0m03:11:56.656090 [info ] [MainThread]: Found 17 models, 4 data tests, 8 seeds, 679 macros
+[0m03:11:56.671939 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd57ef4a1-4fe2-418a-a84e-36a0f7d6e889', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE7D8C2E50>]}
+[0m03:11:56.671939 [info ] [MainThread]: 
+[0m03:11:56.671939 [info ] [MainThread]: Concurrency: 8 threads (target='dev')
+[0m03:11:56.671939 [info ] [MainThread]: 
+[0m03:11:56.671939 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m03:11:56.671939 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_PC_DBT_DB_business'
+[0m03:11:56.671939 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_PC_DBT_DB_integration'
+[0m03:11:56.671939 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_PC_DBT_DB_raw'
+[0m03:11:56.671939 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_PC_DBT_DB_conformance'
+[0m03:11:56.830354 [debug] [ThreadPool]: Using snowflake connection "list_PC_DBT_DB_business"
+[0m03:11:56.830354 [debug] [ThreadPool]: Using snowflake connection "list_PC_DBT_DB_integration"
+[0m03:11:56.830354 [debug] [ThreadPool]: On list_PC_DBT_DB_business: show objects in PC_DBT_DB.business
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "payal_dbt", "target_name": "dev", "connection_name": "list_PC_DBT_DB_business"} */;
+[0m03:11:56.830354 [debug] [ThreadPool]: Using snowflake connection "list_PC_DBT_DB_raw"
+[0m03:11:56.830354 [debug] [ThreadPool]: Using snowflake connection "list_PC_DBT_DB_conformance"
+[0m03:11:56.844560 [debug] [ThreadPool]: On list_PC_DBT_DB_integration: show objects in PC_DBT_DB.integration
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "payal_dbt", "target_name": "dev", "connection_name": "list_PC_DBT_DB_integration"} */;
+[0m03:11:56.844560 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:11:56.844560 [debug] [ThreadPool]: On list_PC_DBT_DB_raw: show objects in PC_DBT_DB.raw
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "payal_dbt", "target_name": "dev", "connection_name": "list_PC_DBT_DB_raw"} */;
+[0m03:11:56.844560 [debug] [ThreadPool]: On list_PC_DBT_DB_conformance: show objects in PC_DBT_DB.conformance
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "payal_dbt", "target_name": "dev", "connection_name": "list_PC_DBT_DB_conformance"} */;
+[0m03:11:56.844560 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:11:56.844560 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:11:56.844560 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:12:00.952785 [debug] [ThreadPool]: SQL status: SUCCESS 8 in 4.107 seconds
+[0m03:12:00.952785 [debug] [ThreadPool]: SQL status: SUCCESS 8 in 4.113 seconds
+[0m03:12:00.952785 [debug] [ThreadPool]: SQL status: SUCCESS 9 in 4.117 seconds
+[0m03:12:01.015537 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 4.169 seconds
+[0m03:12:01.019209 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd57ef4a1-4fe2-418a-a84e-36a0f7d6e889', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE7D9141D0>]}
+[0m03:12:01.033288 [debug] [Thread-1 (]: Began running node test.payal_dbt.accepted_values_bus_inflation_over_crisis_crisis_name__Oil_crisis__Asian_crisis__Dot_com__Financial_crisis__Covid_19.76c3e1107d
+[0m03:12:01.033288 [debug] [Thread-2 (]: Began running node test.payal_dbt.count_validation_raw_conf_kpi
+[0m03:12:01.033288 [debug] [Thread-3 (]: Began running node test.payal_dbt.not_null_bus_customer_aum_over_time_customer_name.ddcca3c07e
+[0m03:12:01.033288 [debug] [Thread-4 (]: Began running node test.payal_dbt.unique_bus_customer_aum_over_time_customer_name.284f6bd37a
+[0m03:12:01.033288 [info ] [Thread-1 (]: 1 of 4 START test accepted_values_bus_inflation_over_crisis_crisis_name__Oil_crisis__Asian_crisis__Dot_com__Financial_crisis__Covid_19  [RUN]
+[0m03:12:01.033288 [info ] [Thread-2 (]: 2 of 4 START test count_validation_raw_conf_kpi ................................ [RUN]
+[0m03:12:01.033288 [info ] [Thread-3 (]: 3 of 4 START test not_null_bus_customer_aum_over_time_customer_name ............ [RUN]
+[0m03:12:01.033288 [debug] [Thread-1 (]: Acquiring new snowflake connection 'test.payal_dbt.accepted_values_bus_inflation_over_crisis_crisis_name__Oil_crisis__Asian_crisis__Dot_com__Financial_crisis__Covid_19.76c3e1107d'
+[0m03:12:01.033288 [info ] [Thread-4 (]: 4 of 4 START test unique_bus_customer_aum_over_time_customer_name .............. [RUN]
+[0m03:12:01.033288 [debug] [Thread-2 (]: Acquiring new snowflake connection 'test.payal_dbt.count_validation_raw_conf_kpi'
+[0m03:12:01.033288 [debug] [Thread-3 (]: Acquiring new snowflake connection 'test.payal_dbt.not_null_bus_customer_aum_over_time_customer_name.ddcca3c07e'
+[0m03:12:01.033288 [debug] [Thread-1 (]: Began compiling node test.payal_dbt.accepted_values_bus_inflation_over_crisis_crisis_name__Oil_crisis__Asian_crisis__Dot_com__Financial_crisis__Covid_19.76c3e1107d
+[0m03:12:01.033288 [debug] [Thread-4 (]: Acquiring new snowflake connection 'test.payal_dbt.unique_bus_customer_aum_over_time_customer_name.284f6bd37a'
+[0m03:12:01.033288 [debug] [Thread-2 (]: Began compiling node test.payal_dbt.count_validation_raw_conf_kpi
+[0m03:12:01.049096 [debug] [Thread-3 (]: Began compiling node test.payal_dbt.not_null_bus_customer_aum_over_time_customer_name.ddcca3c07e
+[0m03:12:01.056720 [debug] [Thread-1 (]: Writing injected SQL for node "test.payal_dbt.accepted_values_bus_inflation_over_crisis_crisis_name__Oil_crisis__Asian_crisis__Dot_com__Financial_crisis__Covid_19.76c3e1107d"
+[0m03:12:01.056720 [debug] [Thread-4 (]: Began compiling node test.payal_dbt.unique_bus_customer_aum_over_time_customer_name.284f6bd37a
+[0m03:12:01.067504 [debug] [Thread-2 (]: Writing injected SQL for node "test.payal_dbt.count_validation_raw_conf_kpi"
+[0m03:12:01.072570 [debug] [Thread-3 (]: Writing injected SQL for node "test.payal_dbt.not_null_bus_customer_aum_over_time_customer_name.ddcca3c07e"
+[0m03:12:01.081585 [debug] [Thread-4 (]: Writing injected SQL for node "test.payal_dbt.unique_bus_customer_aum_over_time_customer_name.284f6bd37a"
+[0m03:12:01.083468 [debug] [Thread-1 (]: Began executing node test.payal_dbt.accepted_values_bus_inflation_over_crisis_crisis_name__Oil_crisis__Asian_crisis__Dot_com__Financial_crisis__Covid_19.76c3e1107d
+[0m03:12:01.083468 [debug] [Thread-2 (]: Began executing node test.payal_dbt.count_validation_raw_conf_kpi
+[0m03:12:01.099617 [debug] [Thread-3 (]: Began executing node test.payal_dbt.not_null_bus_customer_aum_over_time_customer_name.ddcca3c07e
+[0m03:12:01.099617 [debug] [Thread-1 (]: Writing runtime sql for node "test.payal_dbt.accepted_values_bus_inflation_over_crisis_crisis_name__Oil_crisis__Asian_crisis__Dot_com__Financial_crisis__Covid_19.76c3e1107d"
+[0m03:12:01.099617 [debug] [Thread-2 (]: Writing runtime sql for node "test.payal_dbt.count_validation_raw_conf_kpi"
+[0m03:12:01.099617 [debug] [Thread-4 (]: Began executing node test.payal_dbt.unique_bus_customer_aum_over_time_customer_name.284f6bd37a
+[0m03:12:01.099617 [debug] [Thread-3 (]: Writing runtime sql for node "test.payal_dbt.not_null_bus_customer_aum_over_time_customer_name.ddcca3c07e"
+[0m03:12:01.117216 [debug] [Thread-4 (]: Writing runtime sql for node "test.payal_dbt.unique_bus_customer_aum_over_time_customer_name.284f6bd37a"
+[0m03:12:01.118204 [debug] [Thread-1 (]: Using snowflake connection "test.payal_dbt.accepted_values_bus_inflation_over_crisis_crisis_name__Oil_crisis__Asian_crisis__Dot_com__Financial_crisis__Covid_19.76c3e1107d"
+[0m03:12:01.119207 [debug] [Thread-2 (]: Using snowflake connection "test.payal_dbt.count_validation_raw_conf_kpi"
+[0m03:12:01.120220 [debug] [Thread-3 (]: Using snowflake connection "test.payal_dbt.not_null_bus_customer_aum_over_time_customer_name.ddcca3c07e"
+[0m03:12:01.121202 [debug] [Thread-1 (]: On test.payal_dbt.accepted_values_bus_inflation_over_crisis_crisis_name__Oil_crisis__Asian_crisis__Dot_com__Financial_crisis__Covid_19.76c3e1107d: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        crisis_name as value_field,
+        count(*) as n_records
+
+    from PC_DBT_DB.business.bus_inflation_over_crisis
+    group by crisis_name
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'Oil crisis','Asian crisis','Dot com','Financial crisis','Covid 19'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "payal_dbt", "target_name": "dev", "node_id": "test.payal_dbt.accepted_values_bus_inflation_over_crisis_crisis_name__Oil_crisis__Asian_crisis__Dot_com__Financial_crisis__Covid_19.76c3e1107d"} */
+[0m03:12:01.122188 [debug] [Thread-2 (]: On test.payal_dbt.count_validation_raw_conf_kpi: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  with raw_count as (
+select count(*) as c1 
+from PC_DBT_DB.raw.Cpi
+),
+conf_count as (
+select count(*) as c2
+from PC_DBT_DB.conformance.conf_cpi
+)
+select 
+    raw_count.c1,
+    conf_count.c2
+from raw_count, conf_count
+where raw_count.c1 != conf_count.c2
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "payal_dbt", "target_name": "dev", "node_id": "test.payal_dbt.count_validation_raw_conf_kpi"} */
+[0m03:12:01.123145 [debug] [Thread-4 (]: Using snowflake connection "test.payal_dbt.unique_bus_customer_aum_over_time_customer_name.284f6bd37a"
+[0m03:12:01.123145 [debug] [Thread-3 (]: On test.payal_dbt.not_null_bus_customer_aum_over_time_customer_name.ddcca3c07e: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_name
+from PC_DBT_DB.business.bus_customer_aum_over_time
+where customer_name is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "payal_dbt", "target_name": "dev", "node_id": "test.payal_dbt.not_null_bus_customer_aum_over_time_customer_name.ddcca3c07e"} */
+[0m03:12:01.124144 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m03:12:01.124144 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m03:12:01.125191 [debug] [Thread-4 (]: On test.payal_dbt.unique_bus_customer_aum_over_time_customer_name.284f6bd37a: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    customer_name as unique_field,
+    count(*) as n_records
+
+from PC_DBT_DB.business.bus_customer_aum_over_time
+where customer_name is not null
+group by customer_name
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "payal_dbt", "target_name": "dev", "node_id": "test.payal_dbt.unique_bus_customer_aum_over_time_customer_name.284f6bd37a"} */
+[0m03:12:01.126149 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m03:12:01.131824 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m03:12:03.524072 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 2.415 seconds
+[0m03:12:03.548171 [info ] [Thread-2 (]: 2 of 4 PASS count_validation_raw_conf_kpi ...................................... [[32mPASS[0m in 2.51s]
+[0m03:12:03.548171 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 2.424 seconds
+[0m03:12:03.550177 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 2.419 seconds
+[0m03:12:03.550177 [debug] [Thread-2 (]: Finished running node test.payal_dbt.count_validation_raw_conf_kpi
+[0m03:12:03.552184 [info ] [Thread-3 (]: 3 of 4 PASS not_null_bus_customer_aum_over_time_customer_name .................. [[32mPASS[0m in 2.52s]
+[0m03:12:03.555352 [error] [Thread-4 (]: 4 of 4 FAIL 2 unique_bus_customer_aum_over_time_customer_name .................. [[31mFAIL 2[0m in 2.52s]
+[0m03:12:03.557053 [debug] [Thread-3 (]: Finished running node test.payal_dbt.not_null_bus_customer_aum_over_time_customer_name.ddcca3c07e
+[0m03:12:03.557582 [debug] [Thread-4 (]: Finished running node test.payal_dbt.unique_bus_customer_aum_over_time_customer_name.284f6bd37a
+[0m03:12:03.771391 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 2.648 seconds
+[0m03:12:03.773414 [info ] [Thread-1 (]: 1 of 4 PASS accepted_values_bus_inflation_over_crisis_crisis_name__Oil_crisis__Asian_crisis__Dot_com__Financial_crisis__Covid_19  [[32mPASS[0m in 2.74s]
+[0m03:12:03.775184 [debug] [Thread-1 (]: Finished running node test.payal_dbt.accepted_values_bus_inflation_over_crisis_crisis_name__Oil_crisis__Asian_crisis__Dot_com__Financial_crisis__Covid_19.76c3e1107d
+[0m03:12:03.777203 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m03:12:03.777203 [debug] [MainThread]: Connection 'list_PC_DBT_DB_business' was left open.
+[0m03:12:03.777203 [debug] [MainThread]: On list_PC_DBT_DB_business: Close
+[0m03:12:03.850194 [debug] [MainThread]: Connection 'list_PC_DBT_DB_integration' was left open.
+[0m03:12:03.850194 [debug] [MainThread]: On list_PC_DBT_DB_integration: Close
+[0m03:12:03.929126 [debug] [MainThread]: Connection 'list_PC_DBT_DB_raw' was left open.
+[0m03:12:03.930122 [debug] [MainThread]: On list_PC_DBT_DB_raw: Close
+[0m03:12:04.010744 [debug] [MainThread]: Connection 'list_PC_DBT_DB_conformance' was left open.
+[0m03:12:04.010744 [debug] [MainThread]: On list_PC_DBT_DB_conformance: Close
+[0m03:12:04.090310 [debug] [MainThread]: Connection 'test.payal_dbt.accepted_values_bus_inflation_over_crisis_crisis_name__Oil_crisis__Asian_crisis__Dot_com__Financial_crisis__Covid_19.76c3e1107d' was left open.
+[0m03:12:04.090310 [debug] [MainThread]: On test.payal_dbt.accepted_values_bus_inflation_over_crisis_crisis_name__Oil_crisis__Asian_crisis__Dot_com__Financial_crisis__Covid_19.76c3e1107d: Close
+[0m03:12:04.170215 [debug] [MainThread]: Connection 'test.payal_dbt.count_validation_raw_conf_kpi' was left open.
+[0m03:12:04.183788 [debug] [MainThread]: On test.payal_dbt.count_validation_raw_conf_kpi: Close
+[0m03:12:04.279172 [debug] [MainThread]: Connection 'test.payal_dbt.not_null_bus_customer_aum_over_time_customer_name.ddcca3c07e' was left open.
+[0m03:12:04.279172 [debug] [MainThread]: On test.payal_dbt.not_null_bus_customer_aum_over_time_customer_name.ddcca3c07e: Close
+[0m03:12:04.358462 [debug] [MainThread]: Connection 'test.payal_dbt.unique_bus_customer_aum_over_time_customer_name.284f6bd37a' was left open.
+[0m03:12:04.358462 [debug] [MainThread]: On test.payal_dbt.unique_bus_customer_aum_over_time_customer_name.284f6bd37a: Close
+[0m03:12:04.447880 [info ] [MainThread]: 
+[0m03:12:04.447880 [info ] [MainThread]: Finished running 4 data tests in 0 hours 0 minutes and 7.78 seconds (7.78s).
+[0m03:12:04.447880 [debug] [MainThread]: Command end result
+[0m03:12:04.486642 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\AD06076\payal\my_dbt_project\payal_dbt\target\manifest.json
+[0m03:12:04.489634 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\AD06076\payal\my_dbt_project\payal_dbt\target\semantic_manifest.json
+[0m03:12:04.489634 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\AD06076\payal\my_dbt_project\payal_dbt\target\run_results.json
+[0m03:12:04.489634 [info ] [MainThread]: 
+[0m03:12:04.497840 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m03:12:04.498922 [info ] [MainThread]: 
+[0m03:12:04.499919 [error] [MainThread]: [31mFailure in test unique_bus_customer_aum_over_time_customer_name (models\03_business\bus_models.yml)[0m
+[0m03:12:04.500885 [error] [MainThread]:   Got 2 results, configured to fail if != 0
+[0m03:12:04.500885 [info ] [MainThread]: 
+[0m03:12:04.500885 [info ] [MainThread]:   compiled code at target\compiled\payal_dbt\models\03_business\bus_models.yml\unique_bus_customer_aum_over_time_customer_name.sql
+[0m03:12:04.500885 [info ] [MainThread]: 
+[0m03:12:04.504089 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=4
+[0m03:12:04.505157 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m03:12:04.506157 [debug] [MainThread]: Command `dbt test` failed at 03:12:04.506157 after 9.51 seconds
+[0m03:12:04.507158 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE7B3D9190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE7472A150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE7DBA2E90>]}
+[0m03:12:04.507158 [debug] [MainThread]: Flushing usage events
+[0m03:12:05.235384 [debug] [MainThread]: An error was encountered while trying to flush usage events

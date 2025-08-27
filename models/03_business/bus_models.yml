@@ -1,0 +1,22 @@
+
+models:
+  - name: bus_customer_aum_over_time
+    description: >
+      This model shows the AUM (Assets Under Management) development for clients at Formue over the years.
+
+    columns:
+      - name: customer_name
+        description: Name of the Customer.
+        tests:
+          - not_null
+          - unique
+  
+ 
+  - name: bus_inflation_over_crisis
+    description: >
+      This model shows the resilience of Norway's economy during crisis.
+
+    columns:
+      - name: crisis_name
+        description: Name of the Crisis.
+
